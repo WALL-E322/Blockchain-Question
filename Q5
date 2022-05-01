@@ -1,0 +1,37 @@
+Make a simple smart contract.
+- Create a contract called ZombieFactory (1 point).
+- Create two functions as following:
+  createZombie
+    This function should be private and have two parameters (5 points).
+    - String called name (memory)
+    - Integer called dna 
+  generateRandomDna
+    This function should be private and also only runs on the local node, and won't create a transaction on 
+    the blockchain. Additionally, it should return an integer (7 points).
+      - It has one parameter String called str (memory) 
+      - Generate a random number using keccak256.
+      - Use str to make random number and keep it in an integer called rand.
+      - return rand % 10 
+      (What’s the role of 10 in the above sentence?) (1 point)
+      
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.22 <0.9.0;
+
+
+contract ZombieFactory{
+
+    function createZombie (string memory name, uint dna)private{
+
+    }
+
+    function generateRandomDna(string memory str)private returns(uint){
+
+        uint rand = uint(keccak256(abi.encodePacked(str)));
+        return rand % 10 ;
+        //this reminder operator gives us the first digit of the rand number which can be between 0 to 9
+        // if we get the reminder of 100, it gives us the first two-digit of the number which can be between 0 to 99
+    }
+
+}
