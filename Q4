@@ -1,0 +1,7 @@
+Explain the Visibility Quantifiers in Solidity language in detail:
+  There are 4 kinds of visibiality for functions/state variables in Solidity: public, private, internal and external.
+  1.private: Private functions/variables can only be used internally and not even by derived contracts.
+  2.public: Public functions/variables can be accessed by all parties within and outside the contract.
+  3.internal: Internal functions/variables are only accessible within the contract in which they were declared or by derived contracts.
+  4.external: Eexternal functions are only accessible within the contract in which they were declared and cannot be used for internal call. 
+              State variables cannot be marked as external.
