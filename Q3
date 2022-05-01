@@ -1,0 +1,4 @@
+How many methods do we have to keep String type in Solidity? (Explain in detail) 
+  1.String: by using string method we can declare a array of characters with a dynamic length
+  2.Bytes: Bytes are used to store a fixed-sized character set. You can also define arrays of 1–32 bytes using the type bytes2, byte3, up to bytes32.
+  Byte has the advantage of using less gas, so it's better to use them when we know the length of data.
