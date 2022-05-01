@@ -1,0 +1,21 @@
+1)Explain the role of Oracles in blockchain:
+  Blockchains and smart contracts can’t access off-chain data (data that is outside of the network) so we need third-party services that provide external information
+for smart contract. They are called oracles serving as bridges between blockchains and the outside world. Without blockchain oracles, smart contracts would have very
+limited use as they would only have access to data from within their networks.  
+
+2)Talk about some of the examples, and the differences between these Oracles(Comparing 3 protocols is sufficient):
+  a.Chainlink is one of the most well-known decentralized oracle providers that provides reliable, tamper-proof inputs and outputs for smart contracts.
+  This decentralized oracle network can connect smart contracts to a plenty of real-world data feeds such as asset prices, price feeds, sports data,
+  shipping data, weather data, and others.
+  Chainlink native token is LINK that plays a key on it's reputation system. This system rates oracles based on different performance metrics like uptime,
+  response time, and how many jobs they have successfully completed.
+  
+  b.Band Protocol is a cross-chain oracle network that enables decentralized applications (dApps) to integrate price and event feeds, effectively connecting
+  the decentralized and real worlds.Band offers “community-curated” data sources that allow dApp operators to participate in the management and curation of data feeds
+  to solve the oracle problem and provide smart contracts with reliable data feeds.
+  One of Band’s recent accomplishments is its integration with Google Cloud. Band Protocol has been integrated into Google Cloud Public Data to allow for real-time and
+  accurate financial time series data analysis.
+  
+  c.DIA, a non-profit organization based in Switzerland, is an oracle platform that enables market actors to source, supply and shares trustable data. Its code base,
+  sources and methodologies are open-source and publicly available and it's voting-based oracle. It also can collect data from on-chain and off-chain sources.
+  
