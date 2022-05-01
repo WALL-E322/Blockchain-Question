@@ -1,0 +1,11 @@
+How can we make a condition in solidity using required? (Make an example)
+
+  The condition inside the require must return true so the next lines of code get executed 
+  
+  //we assume the the owner variable is the address of the person who deploys the contract
+  function add(uint num1, uint num2) public {
+    uint result;
+    require(msg.sender == owner,"Only the contract owner can use this function!! ");// if the condition in the require returns false, the second parameter pops up 
+    result num1 + num2;
+    return result;
+  }
