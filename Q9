@@ -1,0 +1,10 @@
+Could we inherit from more than one contract? (If it’s possible How?)
+  Yes it is possible. We just need to separate them by comma 
+  for example if contract A is going to inherit from contract B and contract C, we do it as follows:
+    contract A is B, C {
+    ...
+    }
+    
+  another scenario is possible to. If contract B inherit from contract C then contract A inherit from contract B, basically contract A in inherited from B and C
+    contract B is C{}
+    contract A is B{} //contract A has access to functions and variables to B and C contracts
