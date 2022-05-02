@@ -1,0 +1,17 @@
+Investigate the differences using Golang and Solidity languages.
+In your option, which one is better and more convenient? could you explain your 
+reason?
+
+  Solidity is an object-oriented and statically-typed programming language that was designed to allow developers to create smart contracts.It is designed based on
+existing programming languages and it's very similar to  JavaScript so it has similar structures.Solidity has a large, accessible community. Because Solidity was the
+first smart contract programming language and was developed solely for smart contract programming on the Ethereum network.
+  The only usage of solidity is on Ethereum ecosystem which is one of the most significant parts of blockchain development now.
+
+  Golang is an open-source programming language that was developed by Google. It is loosely based on the syntax of the C programming language. It is is used for
+implementing the blockchain node software itself (basically the platform on top of which Solidity runs).
+
+
+RESULT => This two programming languages are both fairly new and the community is not big yet but both of them take care of blockchain developement.
+  I personnaly think that Golang is better because it has the advantages of dynamic languages like python with performance and security advantage of the compiled language
+like C. Golang has a safe memory and garbage collection. It also has fast compilation time. Since Golang is optimized for multi-core CPU architecture,
+it's extremely practical for highly parallel and concurrent software such as blockchain networks.
