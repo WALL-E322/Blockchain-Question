@@ -1,0 +1,61 @@
+What’s the solution for Ethereum network scalability and congestion? Talk about the solutions in detail.
+What’s your opinion and suggestion? Which one is better?
+
+-The main goal of scalability is to increase transaction speed (faster finality and higher transactions per second) without sacrificing decentralization or security.
+  
+-Basically, there are two ways to scale a blockchain: First one is to work on the main chain itself to improve transaction capacity.(which means working on layer 1)
+That is what Ethereum 2.0 is all about.
+The second one is to change how people use the blockchain. In other words, instead of putting all the interactions on the main chain, some can go off-chain.
+  
+-Here we briefly explain each one:
+
+1)ON-CHAIN SCALING: This method of scaling requires changes to the Ethereum protocol (layer 1 Mainnet). Sharding is currently the main focus for this method of scaling.
+Sharding is the process of splitting a database horizontally to spread the load. In an Ethereum context, sharding will reduce network congestion and increase
+transactions per second by creating new chains, known as “shards”. Sharding is ETH 2.0's scalability solution that will take place when Ethereum moves
+its consensus mechanism from Proof of Work (PoW) to Proof of Stake (PoS). This is a major upgrade and it is a Layer-1 solution.
+
+2)OFF-CHAIN SCALING: Off-chain solutions are implemented separately from layer 1 Mainnet. They require no changes to the existing Ethereum protocol. Some solutions,
+known as "layer 2" solutions, derive their security directly from layer 1 Ethereum consensus. Here we'll be covering some of the Layer-2 solutions:
+  
+  A)Sidechains: Sidechains are independent blockchains that are considered more of a hybrid of Layer 2 and Layer 1 and have their consensus processes.
+    Depending on the architecture, these sidechains can process up to 10,000 transactions per second. However, the side chain's security mechanism may be 
+    weaker than the main chain's since users must transfer control of their coins to it.
+  
+  B)State Channels: Think of State Channels as a way to conduct interactions off the blockchain that would normally be on the blockchain.
+    But Channels are limited. Amongst other things, they can’t send funds off-chain to non-participants.
+   
+  C)ZK-Rollups: The idea behind the roll up is that they they roll up transactions and fit them into a single block. Doing so, thankfully relieves
+    the Ethereum network from some of its congestion and makes transactions faster and less expensive. Rollups also help scalability because
+    they process transactions off the main chain. Developers can even run an Ethereum Virtual Machine (EVM) inside a Rollup.
+    
+    a big question regarding Layer 2 solutions is, “who controls the exits?" With Rollups, the exits are under the control of Layer 1, and that is
+    the Ethereum blockchain. 
+    
+    Furthermore, ZK-Rollups have two types of users: transactors and relayers. Transactors create and broadcast their transfer to the network.
+    Relayers create a rollup by collecting a large number of transfers and rolling them up together.
+    
+    ZK-Rollup Reduced fees per transfer and are faster than Optimistic Rollups. Also gas cost per data transfer is significantly low. On the other hand Some of 
+    the disadvantages are quantum computing tht could pose future hacking threats. Also the overall security of the system is dependent on a certain level of trust.
+    Another issue is that the initial setup of Zk-Rollups can be a little centralized in nature.
+    
+  D)Optimistic Rollups: These Rollups work on the assumption that everything is okay until a whistleblower reports otherwise, while ZK Rollups makes no such assumptions.
+    Optimistic Rollups provide developers the same functionality as Ethereum layer 1 because tgey are EVM and Solidity compliant.
+    Because Layer 1 is the leading chain and stores all transaction data, Optimism Rollsup are safe and decentralized solution.
+
+    Some advantages of Optimism rollups are 200 to 2000 transactions-per-second and better User Experience but on the other hand they have limited throughput
+    compared to ZK Rollups and additional security issues.
+     
+     
+    RESULT => Each method try to solve a part of Ethereum scalibility and congestion problems and the founder of Ethereum, Vitalik Buterin, supports Optimistic
+    Rollups for the near term and ZK Rollups for the longer term. 
+     
+    In my opinion, for a limited number of people the State Channel could be the best answer and in a larger scale, I think ZK Rollsup are better despite 
+    their needs to produce a complex cryptographic proof even for a simple operation. On the bright side, they can execute 2000-9000 transactions per second
+    compared to almost 200 transactions per second in optimism and 10 transactions per second in Ethereum mainnet.
+     
+     
+     
+     
+    
+     
+     
