@@ -1,0 +1,21 @@
+Declare a modifier called onlyOwner which throws if called by any account other 
+than the owner.
+
+
+    address contractOwner;
+    
+    constructor() { //constructor code is executed once when a contract is created and it is used to initialize contract state.
+    
+        contractOwner = msg.sender; //assign the address of the person who deploys the contract to contractOwner because the constructor 
+        
+    }
+
+    modifier onlyOwner() {
+        require(contractOwner == msg.sender, "Caller is not the owner"); //check if the person who uses the function has the same address with the person who owns the contract
+        _;
+    }
+    
+     function sth() public onlyOwner() { // if the condition in the require statement inside the modifier, returns false then the function is not executed
+        uint a = 6;
+        return a + 10 ;
+    }
