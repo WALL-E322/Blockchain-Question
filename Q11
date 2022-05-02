@@ -1,0 +1,4 @@
+What’s Truffle? Explain the role of truffle in implementing dapps.
+  
+  Truffle is  a development environment and testing framework for blockchains. We can compile our solidity code with truffle. we can also have a local blockchain
+  with Ganache and deploy our contract on it by using truffle. 
