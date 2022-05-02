@@ -1,0 +1,13 @@
+What’s modifier? (Declare a modifier that takes two integer parameters called 
+level and zombieId.
+Check if Zombies[_zombieId].level is greater or equal to _level.
+
+
+    Modifiers usually check some conditions inside them. We can attach the modifier's name at the end of a function (or multiple functions) definition
+    to change that function's behavior.
+    The code inside the modifiers is executed first (usually contains a require statement).  
+   
+    modifier CheckLevel(uint _level, uint _zombieId){
+        require(Zombies[_zombieId].level >= _level);
+        _;
+    }
