@@ -1,0 +1,15 @@
+What’s the difference between ERC20 and ERC721?
+
+   ERC20 serves as a standard protocol for the Ethereum blockchain and enables users to share, exchanging or transfer tokens.
+The standard content in ERC-20 token include components such as Token Name, Symbol, Decimal, totalSupply,
+balanceOf, transfer, transferFrom, Allowance, and approve. The first three components, are optional entities in ERC20 tokens
+However, the other six components are mandatory for the tokens following ERC-20 standard.
+   ERC-20 tokens are Fungible tokens meaning they represent a value, like a currency note. They are interchangeable and not unique.
+ Most of the tokens that we see on exchanges today are fungible tokens on Ethereum blockchain. Also, these tokens are divisible.
+ This means you can give 0.1 of your token to someone else.
+ 
+   ERC-721 tokens are also referred to as NFTs. ERC-721 token standards help developers in tokenizing the ownership of any type of arbitrary data.
+ In comparison to ERC20, ERC721 simplifies ownership: a participant either completely owns or does not fully own an asset.
+    ERC-721 tokens are non-fungible meaning they represent a unique asset, like a certificate of ownership for a painting.
+ These tokens are not interchangeable and although they hold value, that value is not the same as any other token of the same type.
+ ERC-721 tokens are non-divisible which means you cannot give half of your token to someone.
