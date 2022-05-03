@@ -15,7 +15,7 @@ than the owner.
         _;
     }
     
-     function sth() public onlyOwner() { // if the condition in the require statement inside the modifier, returns false then the function is not executed
+     function sth() public onlyOwner{ // if the condition in the require statement inside the modifier, returns false then the function is not executed
         uint a = 6;
         return a + 10 ;
     }
