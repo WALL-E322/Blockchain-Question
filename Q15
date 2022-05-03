@@ -1,0 +1,19 @@
+What’s EVM? Would you mind differing the NON-EVM and EVMs?
+
+
+  The Ethereum Virtual Machine (EVM) is the core of the Ethereum network. It is a computation engine which acts like a decentralized computer executing and deploying
+smart contract. EVM to Ethereum is like a CPU to a computer. For this computations, you need to pay a fee in ETH called gas. EVM is "quasi-Turing complete" which means
+it is Turing complete as long as there is gas to run a smart contract.(when somethins is Turing complete, it could be used to solve any computation problem.)
+
+  EVM-compatible public chains for developers creates a code execution environment similar to the EVM.
+They can quickly acquire customers and grow in the early stages with the benefits of Ethereum. They also have some advantages For users such as lower gas fees,
+faster settlement, and the same address format as Ethereum, making the environment more user-friendly. However, they have to compete with
+many other chains in the Ethereum ecosystem.
+
+  Non-EVM Can create more differentiated and innovative applications and they have the opportunities to break down ecosystem barriers and build a new one. On the other hand,
+They have high developer costs and some difficulties migrating projects and users from other chains.
+They are more likely to grow into categories where new ideas emerge like NFT and GameFi.
+
+  Currently, most of the top 10 chains are compatible with the EVM, and even Non-EVM chains like Polkadot and Solana are making EVM-compatible solutions or can
+already operate with Ethereum’s account system (Neon Labs deployed EVM on Solana and Moonbeam launch brings EVM interoperability closer to the Polkadot network)
+
