@@ -2,7 +2,8 @@
 published on a blockchain to execute in a trustless manner and anyone can verify their outputs,and (b) decentralized apps that are user-owned and avoid centralized servers. Ethereum 
 demonstrated the power of smart-contracts, and Stacks brings these capabilities to Bitcoin.
   
-  Here we provide an overview of the Stacks 2.0 blockchain, a layer-1 blockchain that integrates smart contracts and decentralized apps natively with Bitcoin's security, stability, and economic power. It is also pioneer in building a consensus algorithm called Proof of Transfer (PoX) that connectst two blockchains. It also introduce a programming language called Clarity for writing smart contracts. The native coin of this blockchain is STX which is used as fuel for Clarity smart contracts.
+  Here we provide an overview of the Stacks 2.0 blockchain, a layer-1 blockchain that integrates smart contracts and decentralized apps natively with Bitcoin's security, stability, and economic power. The project got its start at the Princeton Computer Science Department in 2013 as an effort to 
+build a better internet. It is also pioneer in building a consensus algorithm called Proof of Transfer (PoX) that connectst two blockchains. It also introduce a programming language called Clarity for writing smart contracts. The native coin of this blockchain is STX which is used as fuel for Clarity smart contracts.
 
   So let's dive deeper in each part of this project.
   
@@ -11,8 +12,11 @@ demonstrated the power of smart-contracts, and Stacks brings these capabilities 
 2.Secure contracts: The Bitcoin blockchain does not allow general smart contracts. This design choice ensures security at the base layer.
 The Stacks blockchain addresses the limitations of scalability and secure smart contracts and enables apps and smart contracts for Bitcoin through POX. Also STX holders can lock their STX to earn BTC rewards from this consensus.
 
-  Stacks 2.0 Design: Stacks 2.0 is a layer-1 blockchain that connects to Bitcoin for security and enables decentralized apps and predictable smart contracts. Stacks 2.0 implements PoX mining that anchors to Bitcoin security. Leader election happens at the Bitcoin blockchain and STX miners write new blocks on the connected Stacks blockchain. With PoX there is no need to modify Bitcoin to enable smart contracts and apps around it.
-
+  Stacks 2.0 Design: There are two types of participants as part of the PoX consensus mechanism: (a) STX miners, and (b) STX holders.
+ (a): STX miners can view state on both the Bitcoin blockchain and the Stacks blockchain. STX miners get newly minted STX (coinbase rewards), transaction fees paid to them in STX, and Clarity contract execution fees of each block also paid in STX.
+ (b): STX holders can participate in consensus and earn BTC rewards by participating in a process called Stacking. To participate, users lock their STX for a reward cycle (approxiamtely two weeks), run or support a full node, and send useful information on the network as STX transactions. STX holders who actively participate in Stacking earn the Bitcoin rewards of that cycle.
+ 
+  Microblocks: The Stacks blockchain transactions can scale independently of Bitcoin; they only depend on Bitcoin for finality. Thousands of Stacks transactions result in a single hash on Bitcoin meaning  An entire block of Stacks transactions corresponds to a single Bitcoin transaction. This significantly improves cost/byte ratio for processing Stacks transactions. Further, Stacks introduces the concept of microblocks that give initial confirmation in seconds.Microblocks are a powerful mechanism for developers to create performant, high quality applications on Stacks, while still inheriting the security of Bitcoin. They also are a protocol-level feature of the Stacks blockchain that solve the technical challenge of transaction latency and allow rapid settlement of Stacks transactions with a high degree of confidence.
 
   The difference between POB and POX: Proof-of-burn is a novel consensus mechanism where miners compete by "burning" (destroying) a proof-of-work cryptocurrency as a proxy for computing resources. Proof-of-transfer (PoX) is an extension of the proof-of-burn mechanism. PoX uses the proof-of-work cryptocurrency of an established blockchain (Bitcoin in Stacks project) to secure a new blockchain. However, unlike proof-of-burn, rather than burning the cryptocurrency, miners transfer the committed cryptocurrency to some other participants in the network.
  
@@ -21,18 +25,11 @@ The Stacks blockchain addresses the limitations of scalability and secure smart 
  Bitcoins used for miner bids are sent to a set of specific addresses corresponding to Stacks (STX) tokens holders that are actively participating in consensus. Thus, rather than being destroyed, the bitcoins consumed in the mining process go to productive Stacks holders as a reward based on their holdings of Stacks and participation in the Stacking algorithm.
  Block reward in Stacks has a semi-halving which is 1000 STX/block for first 4 years; 500 STX/block for following 4 years; 250 for the 4 years after that; and then 125 STX/block in perpetuity after that.
  The other important parameter in POX consensus is block time which is at the same rate as Bitcoin producing roughly once every 10 minutes.
+ 
+  Clarity Smart Contracts: Clarity is a new programming language for smart contracts that optimizes for predictability and security. It also makes the behavior, cost, and performance of smart contracts transparent for developers. Clarity is a decidable language so you can know, with certainty, from the code itself what the program will do. Developers can predict what a given Clarity program will do, and how much it will cost. Clarity is also interpreted which means no compiler is needed. The contract source code itself is published and executed by blockchain nodes. Clarity contracts have visibility into Bitcoin state, meaning hat contract logic can trigger based on pure Bitcoin transactions. So at the end, Clarity contracts can make interacting with Bitcoin state much easier for developers. 
 
+  Stacks (STX) Cryptocurrency: Stacks cryptocurrency (STX) is designed primarily to be used as "fuel" to execute Clarity smart contracts. Stacks are also used for other network functions like registering digital assets, paying for transaction fees, and to publish Clarity contracts on the blockchan. Stacks can be locked by STX holders to participate in consensus and earn Bitcoin rewards. This process is called Stacking. The long-term value of Stacks is generally dependent on the growth of the Stacks network and demand for Clarity smart contracts. 
 
-
-
-
-
-
-
-
-
-
-
-  In my opinion, this project is valuable and can improve more and more in future. The tokenomics in the whitepaper are also distributed adequately and it can take 
+  Conclusion: In my opinion, this project is valuable and can improve more in future. The tokenomics in the whitepaper are also distributed adequately and it can take 
 a pretty good part of ones portfolio as there is various ways to get rewarded in this protocol. More importantly, these rewards are paid in BTC which is the most 
-important and consistent currency so far.
+important and consistent currency so far. For the community contribution in this project, checking project can be helpful and as you can see in https://github.com/stacks-network, developers have been contributing and improving the project.
